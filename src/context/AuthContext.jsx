@@ -74,7 +74,7 @@ export function AuthProvider({ children }) {
 
   const value = { user, dbUser, setDbUser, loading, register, login, loginWithGoogle, logout }
 
-  return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
 
 export function useAuth() {
